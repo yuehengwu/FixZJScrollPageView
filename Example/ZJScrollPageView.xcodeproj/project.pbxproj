@@ -41,7 +41,7 @@
 		0C5444590D5AB9695487583E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		21A4F1D006D8035926B95B74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		22B531D0A23A8A7F204C39B0 /* Pods-ZJScrollPageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJScrollPageView_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZJScrollPageView_Tests/Pods-ZJScrollPageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4CCDEE6D53DBA743A707B5F1 /* ZJScrollPageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZJScrollPageView.podspec; path = ../ZJScrollPageView.podspec; sourceTree = "<group>"; };
+		4CCDEE6D53DBA743A707B5F1 /* ZJScrollPageView_Private.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZJScrollPageView_Private.podspec; path = ../ZJScrollPageView_Private.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZJScrollPageView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJScrollPageView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -189,7 +189,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				4CCDEE6D53DBA743A707B5F1 /* ZJScrollPageView.podspec */,
+				4CCDEE6D53DBA743A707B5F1 /* ZJScrollPageView_Private.podspec */,
 				21A4F1D006D8035926B95B74 /* README.md */,
 				0C5444590D5AB9695487583E /* LICENSE */,
 			);
@@ -207,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				BF80D985F638D4551F373937 /* [CP] Embed Pods Frameworks */,
+				0B216405C054BC582062FCF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,6 +298,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B216405C054BC582062FCF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZJScrollPageView_Example/Pods-ZJScrollPageView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZJScrollPageView_Private/ZJScrollPageView_Private.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZJScrollPageView_Private.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZJScrollPageView_Example/Pods-ZJScrollPageView_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A0C619F548DC60A0491E1C13 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,24 +336,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF80D985F638D4551F373937 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZJScrollPageView_Example/Pods-ZJScrollPageView_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZJScrollPageView/ZJScrollPageView.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZJScrollPageView.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZJScrollPageView_Example/Pods-ZJScrollPageView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C98CB23BC5D9BA93F56CE496 /* [CP] Check Pods Manifest.lock */ = {

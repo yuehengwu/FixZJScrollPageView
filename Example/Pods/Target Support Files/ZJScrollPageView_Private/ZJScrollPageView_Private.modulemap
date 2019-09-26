@@ -1,0 +1,6 @@
+framework module ZJScrollPageView_Private {
+  umbrella header "ZJScrollPageView_Private-umbrella.h"
+
+  export *
+  module * { export * }
+}

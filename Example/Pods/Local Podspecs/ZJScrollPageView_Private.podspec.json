@@ -1,0 +1,23 @@
+{
+  "name": "ZJScrollPageView_Private",
+  "version": "0.1.1",
+  "summary": "none summary",
+  "description": "Revise ZJScrollPageView, because original author doesn't maintain this pod .",
+  "homepage": "https://gitlab.263nt.com/italkbbspecs/zjscrollpageview",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wyh": "yueheng.wu@net263.com"
+  },
+  "source": {
+    "git": "ssh://git@gitlab.263nt.com:2200/italkbbspecs/zjscrollpageview.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZJScrollPageView_Private/Classes/**/*",
+  "frameworks": "UIKit"
+}

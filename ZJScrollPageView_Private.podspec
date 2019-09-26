@@ -29,11 +29,11 @@ Revise ZJScrollPageView, because original author doesn't maintain this pod .
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ZJScrollPageView/Classes/**/*'
+  s.source_files = 'ZJScrollPageView_Private/Classes/**/*'
   s.frameworks = 'UIKit'
   
   # s.resource_bundles = {
-  #   'ZJScrollPageView' => ['ZJScrollPageView/Assets/*.png']
+  #   'ZJScrollPageView' => ['ZJScrollPageView_Private/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

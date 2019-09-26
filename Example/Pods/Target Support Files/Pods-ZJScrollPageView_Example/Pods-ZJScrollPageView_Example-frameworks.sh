@@ -161,10 +161,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/ZJScrollPageView/ZJScrollPageView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZJScrollPageView_Private/ZJScrollPageView_Private.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/ZJScrollPageView/ZJScrollPageView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ZJScrollPageView_Private/ZJScrollPageView_Private.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

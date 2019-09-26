@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## ZJScrollPageView
+## ZJScrollPageView_Private
 
 Copyright (c) 2019 Michael Wu <yueheng.wu@net263.com>
 

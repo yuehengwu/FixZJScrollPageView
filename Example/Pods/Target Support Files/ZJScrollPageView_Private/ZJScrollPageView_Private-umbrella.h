@@ -19,6 +19,6 @@
 #import "ZJSegmentStyle.h"
 #import "ZJTitleView.h"
 
-FOUNDATION_EXPORT double ZJScrollPageViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char ZJScrollPageViewVersionString[];
+FOUNDATION_EXPORT double ZJScrollPageView_PrivateVersionNumber;
+FOUNDATION_EXPORT const unsigned char ZJScrollPageView_PrivateVersionString[];
 
