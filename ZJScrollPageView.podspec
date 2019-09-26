@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZJScrollPageView'
   s.version          = '0.1.1'
-  s.summary          = 'Revise ZJScrollPageView, because original author doesn't maintain this pod .'
+  s.summary          = 'none summary'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,11 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Revise ZJScrollPageView, because original author doesn't maintain this pod .
                        DESC
 
   s.homepage         = 'https://gitlab.263nt.com/italkbbspecs/zjscrollpageview'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wyh' => 'yueheng.wu@net263.com' }
   s.source           = { :git => 'ssh://git@gitlab.263nt.com:2200/italkbbspecs/zjscrollpageview.git', :tag => s.version.to_s }
@@ -31,12 +30,12 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZJScrollPageView/Classes/**/*'
+  s.frameworks = 'UIKit'
   
   # s.resource_bundles = {
   #   'ZJScrollPageView' => ['ZJScrollPageView/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
