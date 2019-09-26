@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ZJScrollPageView'
+  s.name             = 'ZJScrollPageView_Private'
   s.version          = '0.1.1'
   s.summary          = 'none summary'
 
