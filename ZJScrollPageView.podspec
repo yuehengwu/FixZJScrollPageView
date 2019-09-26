@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Michael Wu/ZJScrollPageView'
+  s.homepage         = 'https://gitlab.263nt.com/italkbbspecs/zjscrollpageview'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Michael Wu' => 'yueheng.wu@net263.com' }
-  s.source           = { :git => 'https://github.com/Michael Wu/ZJScrollPageView.git', :tag => s.version.to_s }
+  s.author           = { 'wyh' => 'yueheng.wu@net263.com' }
+  s.source           = { :git => 'ssh://git@gitlab.263nt.com:2200/italkbbspecs/zjscrollpageview.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
