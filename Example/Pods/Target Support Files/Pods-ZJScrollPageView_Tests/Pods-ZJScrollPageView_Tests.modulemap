@@ -1,0 +1,6 @@
+framework module Pods_ZJScrollPageView_Tests {
+  umbrella header "Pods-ZJScrollPageView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
