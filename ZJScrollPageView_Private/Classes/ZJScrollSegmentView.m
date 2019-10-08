@@ -433,6 +433,8 @@ static CGFloat const contentSizeXOff = 20.0;
         
         if (self.segmentStyle.isScrollTitle) {
             if (self.segmentStyle.isStationaryLineWidth) {
+                xDistance = currentTitleView.zj_x+(currentTitleView.zj_width - self.segmentStyle.scrollLineWidth)*0.5 - (oldTitleView.zj_x + (oldTitleView.zj_width - self.segmentStyle.scrollLineWidth)*0.5);
+                
                 self.scrollLine.zj_x = oldTitleView.zj_x + (oldTitleView.zj_width - self.segmentStyle.scrollLineWidth)*0.5 + xDistance * progress;
                 self.scrollLine.zj_width = self.segmentStyle.scrollLineWidth;
             }else {
@@ -452,6 +454,7 @@ static CGFloat const contentSizeXOff = 20.0;
                 self.scrollLine.zj_width = oldScrollLineW + wDistance * progress;
             } else {
                 if (self.segmentStyle.isStationaryLineWidth) {
+                    xDistance = currentTitleView.zj_x+(currentTitleView.zj_width - self.segmentStyle.scrollLineWidth)*0.5 - (oldTitleView.zj_x + (oldTitleView.zj_width - self.segmentStyle.scrollLineWidth)*0.5);
                     self.scrollLine.zj_x = oldTitleView.zj_x + (oldTitleView.zj_width - self.segmentStyle.scrollLineWidth)*0.5 + xDistance * progress;
                     self.scrollLine.zj_width = self.segmentStyle.scrollLineWidth;
                 }else {

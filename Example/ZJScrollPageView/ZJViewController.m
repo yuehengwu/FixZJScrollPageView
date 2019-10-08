@@ -46,7 +46,7 @@
     });
     
     _segmentView = ({
-        ZJScrollSegmentView *segmentView = [[ZJScrollSegmentView alloc]initWithFrame:CGRectMake(0, 44, UIScreen.mainScreen.bounds.size.width, 44) segmentStyle:style delegate:self titles:@[@"第一个",@"第二个",@"第三个",@"第四个",@"第五个",@"第六个",@"第七个",@"第八个",@"第九个",@"第十个"] titleDidClick:^(ZJTitleView *titleView, NSInteger index) {
+        ZJScrollSegmentView *segmentView = [[ZJScrollSegmentView alloc]initWithFrame:CGRectMake(0, 44, UIScreen.mainScreen.bounds.size.width, 44) segmentStyle:style delegate:self titles:@[@"第一个",@"第二个阿斯达四大啊打算",@"第三个",@"第四个",@"第五个",@"第六个",@"第七个",@"第八个",@"第九个",@"第十个"] titleDidClick:^(ZJTitleView *titleView, NSInteger index) {
                        
             [_contentView setContentOffSet:CGPointMake(index*UIScreen.mainScreen.bounds.size.width, 0) animated:YES];
         }];
@@ -67,7 +67,7 @@
 
 - (NSInteger)numberOfChildViewControllers {
     
-    return 6;
+    return 10;
 }
 
 - (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
