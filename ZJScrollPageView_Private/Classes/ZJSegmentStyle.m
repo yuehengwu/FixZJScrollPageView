@@ -24,9 +24,11 @@
         _adjustCoverOrLineWidth = NO;
         _showImage = NO;
         _autoAdjustTitlesWidth = NO;
+        _stationaryLineWidth = NO;
         _animatedContentViewWhenTitleClicked = YES;
         _extraBtnBackgroundImageName = nil;
         _scrollLineHeight = 2.0;
+        _scrollLineWidth = 14.f;
         _scrollLineColor = [UIColor brownColor];
         _coverBackgroundColor = [UIColor lightGrayColor];
         _coverCornerRadius = 14.0;

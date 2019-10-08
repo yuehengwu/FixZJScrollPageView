@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZJScrollPageView_Private'
-  s.version          = '0.1.1'
-  s.summary          = 'none summary'
+  s.version          = '0.1.2'
+  s.summary          = 'iTalkBB customize scrollPageView, base on ZJScrollPageView'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
