@@ -27,6 +27,7 @@
         _stationaryLineWidth = NO;
         _animatedContentViewWhenTitleClicked = YES;
         _extraBtnBackgroundImageName = nil;
+        _scrollLineCornerRadius = 0.f;
         _scrollLineHeight = 2.0;
         _scrollLineWidth = 14.f;
         _scrollLineColor = [UIColor brownColor];

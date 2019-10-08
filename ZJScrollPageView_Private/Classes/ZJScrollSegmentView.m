@@ -620,7 +620,9 @@ static CGFloat const contentSizeXOff = 20.0;
     if (!_scrollLine) {
         UIView *lineView = [[UIView alloc] init];
         lineView.backgroundColor = self.segmentStyle.scrollLineColor;
-
+        if (self.segmentStyle.scrollLineCornerRadius > 0) {
+            lineView.layer.cornerRadius = self.segmentStyle.scrollLineCornerRadius;
+        }
         _scrollLine = lineView;
         
     }

@@ -71,6 +71,8 @@ typedef NS_OPTIONS(NSInteger, SegmentViewComponent) {
 @property (strong, nonatomic) UIColor *scrollLineColor;
 /** 滚动条宽度，只有设置stationaryLineWidth = YES才生效*/
 @property (nonatomic, assign) CGFloat scrollLineWidth;
+/** 滚动条圆角，默认0*/
+@property (nonatomic, assign) CGFloat scrollLineCornerRadius;
 
 /** 遮盖的颜色 */
 @property (strong, nonatomic) UIColor *coverBackgroundColor;
