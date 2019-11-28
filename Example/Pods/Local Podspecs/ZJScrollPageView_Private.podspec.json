@@ -1,7 +1,7 @@
 {
   "name": "ZJScrollPageView_Private",
-  "version": "0.1.1",
-  "summary": "none summary",
+  "version": "0.1.5",
+  "summary": "iTalkBB customize scrollPageView, base on ZJScrollPageView",
   "description": "Revise ZJScrollPageView, because original author doesn't maintain this pod .",
   "homepage": "https://gitlab.263nt.com/italkbbspecs/zjscrollpageview",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "ssh://git@gitlab.263nt.com:2200/italkbbspecs/zjscrollpageview.git",
-    "tag": "0.1.1"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "8.0"

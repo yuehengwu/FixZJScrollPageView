@@ -1,5 +1,5 @@
 PODS:
-  - ZJScrollPageView_Private (0.1.1)
+  - ZJScrollPageView_Private (0.1.5)
 
 DEPENDENCIES:
   - ZJScrollPageView_Private (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZJScrollPageView_Private: 99570348f732c32ffd5ea379b4d228f94da06043
+  ZJScrollPageView_Private: 958f6920edf9914a6226b83cd8263a38103b562d
 
 PODFILE CHECKSUM: f737e87efd172a2c901d956c97188c26957a8cd7
 
-COCOAPODS: 1.8.0
+COCOAPODS: 1.8.4
