@@ -234,7 +234,7 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
 //    NSLog(@"%f------%ld----%ld------", progress, _oldIndex, _currentIndex);
     
     [self contentViewDidMoveFromIndex:_oldIndex toIndex:_currentIndex progress:progress];
-    [self adjustSegmentTitleOffsetToCurrentIndex:_currentIndex];
+    
 }
 
 /** 滚动减速完成时再更新title的位置 */
@@ -242,6 +242,7 @@ static NSString *const kContentOffsetOffKey = @"contentOffset";
     NSInteger currentIndex = (scrollView.contentOffset.x / self.bounds.size.width);
     
     if (_scrollDirection == ZJScrollPageControllerScrollDirectionNone && !_forbidTouchToAdjustPosition) { // 开启bounds 在第一页和最后一页快速松开手又接触滑动的时候 会不合理的被调用这个代理方法 ---- 其实这个时候并没有在松开手的情况下减速完成
+        [self adjustSegmentTitleOffsetToCurrentIndex:_currentIndex];
         return;
     }
      

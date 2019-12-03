@@ -43,6 +43,7 @@
         style.showLine = YES;
         style.stationaryLineWidth = YES;
         style.scrollLineCornerRadius = 1.f;
+        style.scaleTitle = YES;
         style;
     });
     
