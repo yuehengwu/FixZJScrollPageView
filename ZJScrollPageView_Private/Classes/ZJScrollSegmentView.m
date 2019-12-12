@@ -531,13 +531,13 @@ static CGFloat const contentSizeXOff = 20.0;
 
     if (self.scrollView.contentSize.width != self.scrollView.bounds.size.width + contentSizeXOff) {// 需要滚动
         ZJTitleView *currentTitleView = (ZJTitleView *)_titleViews[currentIndex];
-        self.userInteractionEnabled = NO;
+//        self.userInteractionEnabled = NO; // Fix Mr.ZhaoJie's bug
 
         CGFloat offSetx = currentTitleView.center.x - _currentWidth * 0.5;
         if (offSetx < 0) {
             offSetx = 0;
             self.userInteractionEnabled = YES;
-
+            
         }
         CGFloat extraBtnW = self.extraBtn ? self.extraBtn.zj_width : 0.0;
         CGFloat maxOffSetX = self.scrollView.contentSize.width - (_currentWidth - extraBtnW);
